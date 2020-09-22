@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+    <item android:id="@+id/itemGreen"
+        android:title="배경색 초록색"
+        />
+    <item android:id="@+id/itemViolet"
+        android:title="배경색 연보라"
+        />
+    <item android:id="@+id/itemBlue"
+        android:title="배경색 연파랑"
+        />
+    <item android:id="@+id/green"
+        android:title="배경색 초록색"
+        />
+    </group>
+    <item android:title="하위 메뉴">
+        <menu>
+            <item android:id="@+id/itemtoast"
+                android:title="토스트"/>
+            <item android:id="@+id/itemBlack"
+                android:title="화면 검은색으로 초기화" />
+
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView android:text="Name" />
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_span="3" />
+        </TableRow>
+
+        <View
+            android:layout_height="2px"
+            android:background="#FFFFFF" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_column="2"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:text="Cancel" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

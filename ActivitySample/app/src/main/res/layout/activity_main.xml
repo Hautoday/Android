@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#cdacda"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가는 버튼"
+        android:id="@+id/isekai"
+        android:onClick="onClick"/>
+
+    EditText
+        android:inputType = "number"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="정수만 입력해주세요"
+        android:id="@+id/edtNum"/>
+    <Button
+        android:id="@+id/getRetuen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="값 전달후 반환"
+        android:onClick="onClick"/>
+
+</LinearLayout>

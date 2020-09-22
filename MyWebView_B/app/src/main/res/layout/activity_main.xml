@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:background="#D32A2A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edtUrl"
+            android:background="#CAC9C9"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="URL 입력"/>
+        <Button
+            android:id="@+id/btnGo"
+            android:onClick="onClick"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="go"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Home"
+            android:textSize="8dp"
+            android:id="@+id/btnHome"/>
+        <Button
+            android:id="@+id/btnBack"
+            android:onClick="onClick"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="back"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/num1"
+        android:title="1번째 버튼"
+        />
+    <item
+        android:id="@+id/num2"
+        android:title="2번째 버튼"
+        />
+    <item
+        android:id="@+id/num3"
+        android:title="3번째 버튼"
+        />
+
+</menu>
+</LinearLayout>
